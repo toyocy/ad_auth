@@ -28,12 +28,12 @@ authorizations: &AUTHORIZATIONS
 ## Environment
 
 development:
-  host: localhost
+  host: 192.168.10.200
   port: 389
   attribute: sAMAccountName
-  base: CN=Users,DC=devel,DC=local
-  admin_user: CN=Administrator,CN=Users,DC=devel,DC=local
-  admin_password: admin_password
+  base: DC=example,DC=com
+  admin_user: CN=Administrator,CN=Users,DC=example,DC=com
+  admin_password: "Password@1"
   ssl: false
   # <<: *AUTHORIZATIONS
 

@@ -1,4 +1,12 @@
 <h1>StaticPages#home</h1>
 <p>Find me in app/views/static_pages/home.html.erb</p>
 <p>Welcome <%= current_user.username %> !</p>
+
+<li>ユーザー名: <%= current_user.username %></li>
+<li>姓: <%= current_user.last_name %></li>
+<li>名: <%= current_user.first_name %></li>
+<li>電話番号: <%= current_user.phone_number %></li>
+<li>役職: <%= current_user.title %></li>
+<li>メールアドレス: <%= current_user.mail %></li>
+<li>社員番号: <%= current_user.employee_number %></li>
 <%= link_to  "ログアウト", destroy_user_session_path %>
